@@ -11,6 +11,6 @@
     "consolidate" : "~0.4.0",
     "dustjs-linkedin": "~1.1.1",
     "cloudinary": "~0.2.5",
-    "formage-admin": "git@github.com:etaypere/formage-admin.git"
+    "formage-admin": "git://github.com/etaypere/formage-admin.git"
   }
 }

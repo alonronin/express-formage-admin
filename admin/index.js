@@ -7,7 +7,7 @@ module.exports = function (app) {
 
     var admin = admin_forms.createAdmin(app, {root:'admin'});
 
-    admin.setAdminTitle('Your Garage Door Services');
+    admin.setAdminTitle('Formage-Admin Example');
     admin.ensureUserExists('admin', 'admin');
 
     for(var name in models){

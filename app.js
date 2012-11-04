@@ -35,9 +35,9 @@ require('mongoose').connect(app.get('mongo'));
 require('./admin')(app);
 
 app.get('/dust', function(req, res){
-    res.render('index', {title: 'Dust JS'})
+    res.render('index', { title: 'Dust JS' })
 });
 
 http.createServer(app).listen(app.get('port'), function(){
-  console.log("Express server listening on port " + app.get('port'));
+  console.log('Express server listening on port ' + app.get('port'));
 });
