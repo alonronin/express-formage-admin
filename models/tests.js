@@ -3,7 +3,12 @@ var mongoose = require('mongoose'),
     ObjectId = Schema.Types.ObjectId;
 
 var s = new Schema({
-    list: [{ name: String }],
+    list: [{
+        name: String,
+        list: [{
+            name: String
+        }]
+    }],
     ref: { type: ObjectId, ref: 'pages' },
     string: { type: String, required: true },
     date: { type: Date },
